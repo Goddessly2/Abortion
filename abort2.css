@@ -1,0 +1,83 @@
+
+.parallax {
+  /* The image used */
+  background-image: url("belly.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:0;
+  padding:0;
+}
+
+h1{
+  background-color: black;
+  color: purple;
+  text-align: center;
+  background-size: cover;
+}
+
+body{margin:0;}
+
+ul.topnav{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: purple;
+}
+
+ul.topnav li.right{
+  float:right;
+}
+
+@media screen and (max-width: 600px){
+  ul.topnav li.right,
+  ul.topnav li {float:none;}
+}
+
+div.transbox{
+  background-size: 1000px;
+  margin:0;
+  background-color:black;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+div.transbox p{
+  margin: 5%;
+  font-weight: bold;
+  font-size: 30px; 
+  color: purple;
+}
+
+img {
+  width:200px;
+  height: 250px;
+}
